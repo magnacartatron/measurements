@@ -1,6 +1,6 @@
 {
   "name": "measurements",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple library that allows you to crate and manage different types of units of measurement.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
