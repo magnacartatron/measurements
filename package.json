@@ -1,6 +1,6 @@
 {
   "name": "measurements",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple library that allows you to crate and manage different types of units of measurement.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -37,11 +37,19 @@
     "UnitMass",
     "UnitVolume",
     "UnitEnergy",
-    "UnitTemperature"
+    "UnitTemperature",
+    "Swift"
   ],
   "author": "magnacartatron",
-  "repository": "magnacartatron/measurements",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magnacartatron/measurements.git"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magnacartatron/measurements/issues"
+  },
+  "homepage": "https://github.com/magnacartatron/measurements",
   "devDependencies": {
     "@types/jest": "^29.2.5",
     "jest": "^29.3.1",
