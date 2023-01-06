@@ -5,4 +5,4 @@ import { UnitMass } from './measurements/unitmass';
 import { UnitVolume } from './measurements/unitvolume';
 import { UnitTemperature } from './measurements/unittemperature';
 
-export { Measurement, UnitEnergy, UnitLength, UnitMass, UnitVolume, UnitTemperature }
+export { Measurement, UnitEnergy, UnitLength, UnitMass, UnitVolume, UnitTemperature };

@@ -7,4 +7,3 @@ export interface MeasurementType {
   name: string;
   type: TMeasurements;
 }
-

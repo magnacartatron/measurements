@@ -1,6 +1,6 @@
 {
   "name": "measurements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple library that allows you to crate and manage different types of units of measurement.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,7 @@
     "start": "tsc & node ./dist/.",
     "dev": "tsc -w & nodemon ./dist/.",
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare" : "npm run build",
     "prepublishOnly" : "npm test && npm run lint",

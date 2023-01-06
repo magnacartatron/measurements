@@ -1,4 +1,4 @@
-import { MeasurementType } from ".";
+import { MeasurementType } from '.';
 
 export class Measurement<T> {
   /**
@@ -37,7 +37,7 @@ export class Measurement<T> {
 
   public static add(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): Measurement<MeasurementType> {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to add measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     return new Measurement<MeasurementType>(first.value + m2.value, m2.unit);
   }
@@ -47,7 +47,7 @@ export class Measurement<T> {
     m2: Measurement<MeasurementType>,
   ): Measurement<MeasurementType> {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to substract measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     return new Measurement<MeasurementType>(first.value - m2.value, m2.unit);
   }
@@ -57,14 +57,14 @@ export class Measurement<T> {
     m2: Measurement<MeasurementType>,
   ): Measurement<MeasurementType> {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to divide measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     return new Measurement<MeasurementType>(first.value / m2.value, m2.unit);
   }
 
   public static equals(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to equate measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value === m2.value) return true;
     return false;
@@ -72,7 +72,7 @@ export class Measurement<T> {
 
   public static notEquals(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to equate measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value !== m2.value) return true;
     return false;
@@ -80,7 +80,7 @@ export class Measurement<T> {
 
   public static greaterThan(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to compare measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value > m2.value) return true;
     return false;
@@ -88,7 +88,7 @@ export class Measurement<T> {
 
   public static lessThan(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to compare measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value < m2.value) return true;
     return false;
@@ -96,7 +96,7 @@ export class Measurement<T> {
 
   public static greaterThanOrEqual(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to compare measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value >= m2.value) return true;
     return false;
@@ -104,7 +104,7 @@ export class Measurement<T> {
 
   public static lessThanOrEqual(m1: Measurement<MeasurementType>, m2: Measurement<MeasurementType>): boolean {
     if (m1.unit.type !== m2.unit.type) throw new Error('Trying to compare measurements of different dimensions');
-    const first = new Measurement(m1.value,m1.unit);
+    const first = new Measurement(m1.value, m1.unit);
     first.convert(m2.unit);
     if (first.value <= m2.value) return true;
     return false;
