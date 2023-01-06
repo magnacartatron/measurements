@@ -25,3 +25,4 @@ export class UnitTemperature implements MeasurementType {
   );
   public static baseUnit: UnitTemperature = this.kelvin;
 }
+
