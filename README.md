@@ -17,11 +17,11 @@ const caloriesValue = new Measurement(100, UnitEnergy.calories);
 const kiloJoulesValue = caloriesValue.converted(UnitEnergy.kiloJoules);
 
 //Print a formatted label
-console.log(kiloJoulesValue.shortLabel());
+console.log(kiloJoulesValue.shortLabel);
 
 //Add the two energy values together, the unit type is the last parameter used
 const addedValues = UnitEnergy.add(caloriesValue,kiloJoulesValue);
-console.log(addedValues.longLabel());
+console.log(addedValues.longLabel);
 
 //Check if two values are equal
 const equals = UnitEnergy.equal(caloriesValue,kiloJoulesValue);

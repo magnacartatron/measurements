@@ -1,4 +1,4 @@
-import { MeasurementType, TMeasurements } from './types';
+import { MeasurementType, TMeasurements } from '.';
 
 export class UnitMass implements MeasurementType {
   public coefficient: number;
